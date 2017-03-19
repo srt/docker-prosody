@@ -4,7 +4,7 @@ MAINTAINER Stefan Reuter <docker@reucon.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install prosody
-COPY prosody/prosody-debian-packages.key /
+COPY prosody-debian-packages.key /
 RUN set -x \
     && apt-key add /prosody-debian-packages.key \
     && echo "deb http://packages.prosody.im/debian jessie main" \
